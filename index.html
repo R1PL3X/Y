@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồ Ăn Kiểu Âu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <body background="https://img.pikbest.com/wp/202344/natural-oak-high-resolution-photo-of-weathered-texture-on-black-wood_9933156.jpg!w700wp">
+        
+    </body>
+<style>
+body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+        }
+        .account-container {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các ô xuống dòng khi không đủ chỗ */
+    gap: 10px; /* Khoảng cách giữa các ô */
+}
+
+.account {
+    flex: 1 1 calc(33.33% - 10px); /* Mỗi ô chiếm 1/3 chiều rộng, trừ khoảng cách */
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+        .price {
+            color:#28a745;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .buy-button {
+            background: #dd220d;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .buy-button:hover {
+            background: #ddd;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background:#ddd;
+            color: #fff;
+        }
+
+        .account-container {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các ô xuống dòng khi không đủ chỗ */
+    gap: 10px; /* Khoảng cách giữa các ô */
+    margin-bottom: 20px; /* Khoảng cách dưới mỗi nhóm tài khoản */
+}
+.account {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0 2px 5px #e74c3c;
+            flex: 1 1 calc(30% - 20px); /* Điều chỉnh để có 3 ô trong 1 hàng */
+            box-sizing: border-box;
+            min-height: 300px;
+        }
+
+        {
+            box-sizing:border-box;
+        }
+        html,
+        body {
+            width: 100%;
+            margin: 0;
+            padding:0 ;
+        }
+        
+        .hover-effect {
+            width: 300px;
+            height: 200px;
+            background: url('https://s3.hcm-1.cloud.cmctelecom.vn/bannick/photos/shares/bai_viet/bannickff/66c80d558d5eb.gif') no-repeat center center;
+            background-size: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hover-effect:hover {
+            transform: scale(1.1);
+        }
+        .text {
+    color: #333;
+    transition: color 0.3s;
+}
+
+.text:hover {
+    color: #e74c3c;
+}
+.button {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+        }
+
+.button:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+                }
+nav ul li a:hover {
+    color: #28a745; /* Màu xanh cho hiệu ứng hover */
+                    }
+{
+            box-sizing:border-box;
+        }
+
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-size: 100%, 100%;
+    background-image: none; /* Xóa biểu tượng mặc định */
+}
+
+.carousel-control-prev-icon {
+    left: 10px;
+    background-image: url('path/to/prev-icon.png'); /* Thay đổi đường dẫn đến biểu tượng của bạn */
+}
+
+.carousel-control-next-icon {
+    right: 10px;
+    background-image: url('path/to/next-icon.png'); /* Thay đổi đường dẫn đến biểu tượng của bạn */
+}
+.favorite-button {
+    background-color: #ff4081; /* Màu hồng */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.favorite-button:hover {
+    background-color: #e91e63; /* Màu hồng đậm hơn khi hover */
+}
+.navbar {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: space-between; 
+  
+}
+#searchInput {
+    margin-left: 20px;
+}
+.nav-links li {
+    margin: 0 15px; /* Khoảng cách giữa các mục menu */
+}
+
+.logo {
+    margin-right: 20px; /* Khoảng cách giữa logo và menu */
+}
+.search-container {
+    display: flex; /* Hiển thị thanh tìm kiếm và tiêu đề theo hàng ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+.nav-links {
+    list-style: none; /* Bỏ dấu chấm đầu dòng */
+    display: flex; /* Hiển thị danh sách theo hàng ngang */
+    margin: 0; /* Bỏ khoảng cách mặc định */
+    padding: 0; /* Bỏ khoảng cách mặc định */
+    justify-content: center; 
+}
+.top-bar {
+    display: flex; /* Hiển thị logo và thanh tìm kiếm theo hàng ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: space-between; /* Căn đều không gian giữa logo và thanh tìm kiếm */
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+}
+.navbar {
+    display: flex;
+    flex-direction: column; /* Đặt các phần tử theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    padding: 10px; /* Khoảng cách cho navbar */
+    background-color: #f8f8f8; /* Màu nền của navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+    
+/* Định dạng thanh tìm kiếm */
+input[type="text"] {
+    padding: 10px; /* Khoảng cách bên trong */
+    border: 1px solid #ccc; /* Đường viền */
+    border-radius: 5px; /* Bo tròn các góc */
+    width: 300px; /* Chiều rộng của ô tìm kiếm */
+    transition: border 0.3s; /* Hiệu ứng chuyển tiếp khi hover */
+}
+
+input[type="text"]:focus {
+    border-color: #007bff; /* Đổi màu đường viền khi ô tìm kiếm được chọn */
+    outline: none; /* Bỏ viền mặc định */
+}
+
+/* Định dạng danh sách kết quả tìm kiếm */
+#results {
+    list-style: none; /* Bỏ dấu chấm đầu dòng */
+    padding: 0; /* Bỏ khoảng cách mặc định */
+    margin-top: 5px; /* Khoảng cách trên */
+    border: 1px solid #ccc; /* Đường viền cho danh sách */
+    border-radius: 5px; /* Bo tròn các góc */
+    background-color: white; /* Màu nền của danh sách kết quả */
+    position: absolute; /* Để danh sách kết quả xuất hiện bên dưới thanh tìm kiếm */
+    width: 300px; /* Chiều rộng giống thanh tìm kiếm */
+    z-index: 1000; /* Để đảm bảo danh sách hiển thị phía trên các phần tử khác */
+}
+
+/* Định dạng các mục trong danh sách kết quả */
+#results li {
+    padding: 10px; /* Khoảng cách bên trong cho mỗi mục */
+    cursor: pointer; /* Con trỏ chuột chuyển thành tay khi hover */
+}
+
+#results li:hover {
+    background-color: #f1f1f1; /* Đổi màu nền khi hover */
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              
+                <nav class="navbar">
+                    <div class="top-bar"></div>
+                    <div class="logo"><img src="https://cdn.pixabay.com/animation/2023/07/08/11/26/11-26-17-598_512.gif" alt="logo" class="logo_dark" style="max-height: 70px;"></div>
+                    <input type="text" id="searchInput" placeholder="Nhập từ khóa..." onkeyup="searchFunction()">
+                    <script src="2.js"></script>
+            <ul id="results"></ul>
+            </ul>
+                    <ul class="nav-links">
+            <li><a href="">Đồ Ăn</a></li>
+            <li><a href="#accounts">Đồ Uống</a></li>
+            <li><a href="">Hoa</a></li>
+            <li><a href="">Sản Phẩm Chức Năng</a></li>
+            <li><a href=""></a>Giỏ Hàng</li>
+            <li><a href="chatgpteo.html">Hỗ Trợ</a></li>
+            <li><a href="Untitled-1.html">Đăng Nhập</a></li>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div role="listitem" class="carousel-item active carousel-item-left" aria-current="true" aria-posinset="2" aria-setsize="2" id="__BVID__37" aria-hidden="false">
+        <img src="https://cdn-i.vtcnews.vn/resize/th/upload/2021/11/09/co-gi-trong-mon-an-tri-gia-42-tai-nha-hang-moi-cua-dau-bep-gordon-ramsay-10215491.jpg" class=""><!---->
+        </div>
+        <h2>Những Món Nên Thử</h2>
+    <section id="accounts">
+        <div class="account-container">
+            <div class="account">
+                <img src="https://hoangviettravel.vn/wp-content/uploads/2020/02/cac-mon-an-chinh-cua-nguoi-chau-au-05-min.jpg" width="300" height="200">
+                <h3>Mì Ý Spargeti</h3>
+                
+                <span class="price">300,000</span>
+                <p><button class="buy-button" onclick="window.location.href='Untitled-8.html'">Chi Tiết</button></p>
+                <button class="favorite-button" onclick="addToFavorites()">Yêu Thích</button>
+            </div>
+            <div class="account">
+            <img src="https://vfs.vn/wp-content/uploads/2021/03/nhung-dac-trung-cua-mon-an-am-thuc-chau-au-top-10-mon-an-ngon-noi-tieng-chau-au-6.jpg" width="300" height="200">
+            <h3>Bò Bít Tết</h3>
+            
+            <span class="price">800,000</span>
+            <p><button class="buy-button" onclick="window.location.href='Untitled-8.html'">Chi Tiết</button></p>
+            <button class="favorite-button" onclick="addToFavorites()">Yêu Thích</button>
+        </div>
+        <div class="account">
+            <img src="https://hoangviettravel.vn/wp-content/uploads/2020/02/cac-mon-an-chinh-cua-nguoi-chau-au-05-min.jpg" width="300" height="200">
+            <h3>Mì Ý Spargeti</h3>
+            
+            <span class="price">300,000</span>
+            <p><button class="buy-button" onclick="window.location.href='Untitled-8.html'">Chi Tiết</button></p>
+            <button class="favorite-button" onclick="addToFavorites()">Yêu Thích</button>
+        </div>
+        <div class="account">
+            <img src="https://hoangviettravel.vn/wp-content/uploads/2020/02/cac-mon-an-chinh-cua-nguoi-chau-au-05-min.jpg" width="300" height="200">
+            <h3>Mì Ý Spargeti</h3>
+            
+            <span class="price">300,000</span>
+            <p><button class="buy-button" onclick="window.location.href='Untitled-8.html'">Chi Tiết</button></p>
+            <button class="favorite-button" onclick="addToFavorites()">Yêu Thích</button>
+        </div>
+        <div class="account">
+            <img src="https://media.cooky.vn/images/blog-2016/top-10-mon-an-ngon-noi-tieng-chau-au%203.jpg" width="300" height="200">
+            <h3>Pizza</h3>
+            
+            <span class="price">200,000</span>
+            <p><button class="buy-button" onclick="window.location.href='Untitled-8.html'">Chi Tiết</button></p>
+            <button class="favorite-button" onclick="addToFavorites()">Yêu Thích</button>
+        </div>
+        <div class="account">
+            <img src="https://hoangviettravel.vn/wp-content/uploads/2020/02/cac-mon-an-chinh-cua-nguoi-chau-au-05-min.jpg" width="300" height="200">
+            <h3>Mì Ý Spargeti</h3>
+            
+            <span class="price">300,000</span>
+            <p><button class="buy-button" onclick="window.location.href='Untitled-8.html'">Chi Tiết</button></p>
+            <button class="favorite-button" onclick="addToFavorites()">Yêu Thích</button>
+        </div>
+        </section>
+    
+
+    <section id="contact">
+        <h2>Liên Hệ</h2>
+        <p>Nếu bạn có bất kỳ câu hỏi nào, hãy liên hệ với chúng tôi qua email: support@example.com</p>
+        <p>Hoặc qua sdt 012345678</p>
+    </section>
+    <script>
+        function addToFavorites() {
+            alert('Đã thêm vào danh sách yêu thích!');
+        }
+    </script>
+</body>
+</html>
